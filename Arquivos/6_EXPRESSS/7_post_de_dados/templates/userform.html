@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar usurário</title>
+</head>
+<body>
+    <h1>Adicionar usuário</h1>
+    <!--Esse formulário está ligado com o post do index, sendo necessário usar a rota que está
+    sendo usada no post e em seguida o método que no caso é o post-->
+    <form action="/users/save" method="post">
+        <div>
+            <input type="text" name="name" placeholder="digite um nome">
+        </div>
+        <div>
+            <input type="text" name="age" placeholder="digite a idade">
+        </div>
+        <div>
+            <input type="submit" value="cadastrar">
+        </div>
+    </form>
+</body>
+</html>
