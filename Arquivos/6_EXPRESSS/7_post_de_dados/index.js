@@ -23,6 +23,13 @@ app.post('/users/save', (req, res) => {
     /*Toda requisição do body é transformada em um objeto javascript que a gente consegue ler usando 
     req.body*/
     console.log(req.body)
+
+    const name = req.body.name
+    const age = req.body.age
+
+    console.log(`O nome do usuário é ${name} e ele tem ${age} anos`)
+
+    res.sendFile(`${basePath}/userform.html`)
 })
 
 app.get('/users/:id', (req, res) => {
